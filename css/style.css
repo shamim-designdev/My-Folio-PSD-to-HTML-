@@ -1,0 +1,363 @@
+/* *common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: "Open sans", sans-serif;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+
+.btn{
+     text-transform: uppercase;
+     font-weight: 800;
+     font-size: 14px;
+     color: rgb(18, 2, 61);
+     background-color: #CFC81D;
+     padding: 19px 43px;
+     display: inline-block;
+}
+/* *common css end */
+
+/*nav bar*/
+nav{
+    background-color: #02918C;
+}
+nav .row{
+    align-items: flex;
+
+}
+nav .logo{
+    width: 30%;       
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+
+nav .menu ul li{
+    display: inline-block;
+}
+
+nav .menu ul li :hover{
+    background-color: #ffffff;
+    color: #02918C;
+    transition: 0.5s ease;
+    border-radius: 25px;
+}
+
+nav .menu ul li a{
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 25px;
+    display: inline-block;
+
+}
+
+nav ul li .submenu{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+    background-color: #ffffff;
+}
+
+nav ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    background-color: #cfeeee;
+
+}
+
+nav ul li .submenu li{
+    display: block;
+}
+
+nav ul li .submenu li a{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+/*banner*/
+#banner{
+    background-image: url(../image/Screenshot_1.jpeg.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+#banner .row{
+    height: 100%;
+}
+
+#banner .banner_cnt{
+     width: 100%;
+}
+
+#banner .banner_cnt h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_cnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+.banner_cnt a:hover{
+    background-color: #ffffff;
+    color: #02918C;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+#banner .banner_cnt img{
+    margin: 50px 0;
+}
+
+/*ABOUT SECTION*/
+
+#about{ padding:80px 0;
+}
+.div1{
+    text-align: center;
+}
+.div1 h2{
+    font-size: 46px;
+    font-weight: 600;
+    color: #02918C;
+    text-transform: uppercase;
+}
+.div1 h3{
+    font-size: 16px;
+    color: #7E8287;
+    padding: 34px 0;
+}
+.div1 p{
+    font-size: 16px;
+    color: #7E8287;
+    line-height: 25px;
+    
+}
+.div1 p span{
+    font-size: 23px;
+    color: #5c5d5e;
+    
+}
+
+#about{
+    padding-bottom: 50px;
+}
+.maincard{
+    width: 100%;
+    padding-top: 80px;
+}
+
+.card1{
+  text-align: center;
+   width: 20%;
+   border-right: 1px solid #7e8287dc;
+   padding: 50px;
+   transition: 0.50s ease;
+
+}
+
+.maincard .row:last-child{
+    border-right: none;
+}
+.card1 span{
+    font-size: 30px;
+    color: #02918c;
+
+}
+#about .card1:hover{
+   
+    padding: 0;
+    background-color: rgba(240, 248, 255, 0.575);
+
+}
+
+.card1 h2{
+    font-size: 16px;
+    font-weight: 800;
+    color: #5c5d5e;
+    margin: 24px 0;
+
+}
+.card1 p{
+    color: #5c5d5e;
+    font-size: 12px;
+   font-weight: 400;
+   line-height: 17px;
+}
+.card1:last-child{
+    border-right: none;
+}
+
+/*Services*/
+#services{
+    background-image: url(../image/Screenshot1.jpg);
+    background-size: cover;
+    padding: 74px 0;
+    transition: 0.50s ease;
+
+}
+.div_left{
+    width: 50%;
+    text-align: left;
+}
+.about h2{
+    font-size: 46px;
+    width: 800;
+    color: #02918c;
+    text-transform: uppercase;
+
+    }
+.about h3{
+        font-size: 16px;
+        color: #5c5d5e;
+        padding: 34px 0;
+    }
+.about p{
+        font-size: 14px;
+        color: #7e8287;
+        line-height: 40px;            
+        }
+
+.about_card .card1{
+  width: 50%;
+  text-align: left;
+  border-right: none;
+  padding: 0;
+  margin: 20px 0;
+
+}
+.about_card h2{
+    margin: 15px 0;
+}
+/*Services end*/
+
+/*My Work*/
+#work .about{
+    text-align: center;
+    margin: 100px 0;
+
+}
+#work .about h3{
+    font-size: 11px;
+    margin: -25px 0;
+}
+
+.img_card{
+    width: 25%;
+    position: relative;
+   
+}
+.img_card img{
+    width: 100%;
+    display: block;
+    
+}
+.img_card .overlay{
+    position: absolute;
+    background-color: #38494694;
+    inset: 20px 15px;
+    text-align: center;
+    padding-top: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.50s ease;
+    margin-top: 40px;
+
+}
+
+.overlay h3{
+  color: white;
+  margin-bottom: 10px;
+
+}
+.overlay p{
+    color: white;
+}
+.img_card:hover .overlay{
+   visibility: visible;
+   opacity: 1;
+   margin: 0;
+   border-radius: 10px;
+}
+
+#services .about_card .card1:hover{
+   margin: 0;
+   
+}
+
+/*Contact Secton*/
+#contact .about{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    
+}
+#contact .about h3{
+    font-size: 11px;
+    margin: -25px 0;
+}
+
+/*FOOTER SECTION*/
+#footer{
+    text-align: center;
+    background-color: #0b0b0b;
+    padding: 20px 0;
+}
+#footer .all{
+    margin: 60px 0;
+    text-align: center;
+    width: 100%;
+}
+#footer .all h2{
+ color: #ffffff;
+ font-size: 16px;
+ padding-bottom: 20px;
+ border-bottom: 1px solid #4e5053;
+ 
+}
+
+.btn :hover{   
+    color: #02918C;
+    transition: 0.5s ease;
+}
+
+.footer_last h4{
+    background-color: #000000;
+  color: #758caf;
+  padding: 30px 0;
+}
+.footer_last:hover h4{
+  
+    color: red;
+}
